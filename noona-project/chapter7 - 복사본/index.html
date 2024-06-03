@@ -22,8 +22,7 @@
 
     <nav class="container navbar navbar-expand-lg navbar-pc margin_h20">
         <div class="navbar-logo">
-            <a class="navbar-brand" href="#"><img id="theme-image" src="../../img/cartier_logo_w.png" height="50px"></a>
-            <div class="dark_button"><button id="theme-toggle" type="button" class="btn btn-dark"><i class="fa-solid fa-sun" style="color: #FFD43B;"></i> 라이트모드</button></div>
+            <a class="navbar-brand" href="#"><img src="../../img/cartier_logo.png" height="50px"></a>
         </div>
         <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -141,7 +140,7 @@
                     </form>
                 </div>
                 <div class="">
-                    <div class="m_side_menu">
+                    <div class="m_side_menu">                        
                         <span class="">㈜ 리치몬트 코리아</span>
                         <span class="">대표이사: 이진원</span>
                         <span class="">서울 중구 퇴계로 100 스테이트타워 남산 (04631)</span>
@@ -496,17 +495,17 @@
         <div class="footer-partners">
             <div class="footer-partners-img">
                 <a href="https://www.cartierwomensinitiative.com/" class="link" title="Visit our Women's Initiative site" target="_blank">
-                    <img class="footer-partners__img opacity-up lazyloaded" aria-hidden="true" focusable="false" src="../../img/CWI-Logo-black-424x190px.png">
+                    <img class="footer-partners__img opacity-up lazyloaded" aria-hidden="true" focusable="false" src="https://www.cartier.com/on/demandware.static/-/Sites-CartierKR-Library/default/dweaa4ded7/CWI-Logo-black-424x190px.png" src="/on/demandware.static/-/Sites-CartierKR-Library/default/dweaa4ded7/CWI-Logo-black-424x190px.png">
                 </a>
             </div>
             <div class="footer-partners-img">
                 <a href="https://www.fondationcartier.com/" class="link" title="Learn about our efforts at Cartier Philanthropy" target="_blank">
-                    <img class="footer-partners__img opacity-up lazyloaded" aria-hidden="true" focusable="false" src="../../img/CWI-Logo-black-424x190px.png">
+                    <img class="footer-partners__img opacity-up lazyloaded" aria-hidden="true" focusable="false" src="https://www.cartier.com/on/demandware.static/-/Sites-CartierKR-Library/default/dwc47e9020/cartier_partner_logo_fondation.png" src="/on/demandware.static/-/Sites-CartierKR-Library/default/dwc47e9020/cartier_partner_logo_fondation.png">
                 </a>
             </div>
             <div class="footer-partners-img">
                 <a href="https://www.cartierphilanthropy.org/" class="link" title="View the Cartier Foundation" target="_blank">
-                    <img class="footer-partners__img opacity-up lazyloaded" aria-hidden="true" focusable="false" src="../../img/CWI-Logo-black-424x190px.png">
+                    <img class="footer-partners__img opacity-up lazyloaded" aria-hidden="true" focusable="false" src="https://www.cartier.com/on/demandware.static/-/Sites-CartierKR-Library/default/dwa3fbacd5/Philanthropy.png" src="/on/demandware.static/-/Sites-CartierKR-Library/default/dwa3fbacd5/Philanthropy.png">
                 </a>
             </div>
         </div>
@@ -613,26 +612,6 @@
                 document.getElementById("popup").style.display = "block";
             }
         }
-
-        //다크모드
-        document.documentElement.setAttribute('data-theme', 'dark'); // 기본으로 다크 모드 설정
-
-        const toggleButton = document.getElementById('theme-toggle');
-        const themeImage = document.getElementById('theme-image');
-
-        toggleButton.addEventListener('click', function () {
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-
-            if (currentTheme === 'dark') {
-                document.documentElement.setAttribute('data-theme', 'light');
-                toggleButton.innerHTML = '<i class="fa-solid fa-moon"></i> 다크모드'; // 버튼 텍스트와 아이콘 변경
-                themeImage.src = '../../img/cartier_logo.png'; // 라이트 모드 이미지로 변경
-            } else {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                toggleButton.innerHTML = '<i class="fa-solid fa-sun" style="color: #FFD43B;"></i> 라이트모드'; // 버튼 텍스트와 아이콘 변경
-                themeImage.src = '../../img/cartier_logo_w.png'; // 다크 모드 이미지로 변경
-            }
-        });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

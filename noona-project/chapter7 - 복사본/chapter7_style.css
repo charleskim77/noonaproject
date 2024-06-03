@@ -1,41 +1,8 @@
-:root {
-    --text-color: #bdbdbd;
-    /* 다크 모드 텍스트 색상 */
-    --bg-color: #121212;
-    /* 다크 모드 배경 색상 */
-}
-
-[data-theme="light"] {
-    --text-color: #000;
-    /* 라이트 모드 텍스트 색상 */
-    --bg-color: #fff;
-    /* 라이트 모드 배경 색상 */
-    .nav-link {
-        color: #121212;
-    }
-    .nav-link:hover {
-        color: #02acca;
-    }
-
-}
-
-@media (data-theme: light) {
-    .nav-link {
-        color: #121212;
-    }
-
-    a {
-        color: #3ea6ff;
-    }
-}
-
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-}
-
-a {
-    color: var(--link-color);
+    margin: 0;
+    padding: 0;
+    /*background: #000000;*/
+    height: 100%;
 }
 
 a {
@@ -68,7 +35,6 @@ a {
     .media_margin_b100 {
         margin: 30px 0;
     }
-
     .margin_b100 {
         margin-bottom: 70px;
     }
@@ -109,11 +75,10 @@ a {
         text-align: center;
         overflow: hidden;
     }
-
+    
     .image-container img {
         width: 100%;
     }
-
     .col-xs-12 {
         margin-bottom: 50px;
     }
@@ -151,24 +116,12 @@ a {
 }
 
 .navbar-logo {
-    position: relative;
-    width: 100%;
     padding: 20px 0 30px 0;
-    text-align: center;
 }
 
-.dark_button {
-    position: absolute;
-    right: 20px;
-    bottom: 30px;
-}
-
-.nav-link {
-    color: #818181;
-}
-
-.nav-link:hover {
-    color: #fff;
+.nav-link a:hover {
+    transform: scale(1.2);
+    color: chocolate;
 }
 
 .btn-outline-success {
@@ -314,7 +267,6 @@ a {
     .footer-partners-img {
         width: 33%;
     }
-
     .footer-partners-img a img {
         height: 20px;
     }
@@ -387,12 +339,10 @@ a {
     background-color: #8080803a;
     padding: 5px;
 }
-
 @media (max-width: 576px) {
     .popup {
         width: 90%;
     }
-
     .bottom_b_icon {
         justify-content: space-around;
     }
@@ -428,7 +378,6 @@ a {
     color: #808080;
     padding: 20px;
 }
-
 .m_side_menu span {
     margin-bottom: 10px;
 }
