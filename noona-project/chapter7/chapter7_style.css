@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    /*background: #f4f6f8;*/
+    background: #000000;
     height: 100%;
 }
 
@@ -270,7 +270,6 @@ a {
     .footer-partners-img a img {
         height: 20px;
     }
-    
 }
 
 .footer-business-information {
@@ -343,6 +342,9 @@ a {
 @media (max-width: 576px) {
     .popup {
         width: 90%;
+    }
+    .bottom_b_icon {
+        justify-content: space-around;
     }
 }
 
