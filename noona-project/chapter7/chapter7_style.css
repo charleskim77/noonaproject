@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: #f4f6f8;
+    /*background: #f4f6f8;*/
     height: 100%;
 }
 
@@ -18,13 +18,25 @@ a {
     margin: 20px 0;
 }
 
+.margin_20 {
+    margin: 20px;
+}
+
+.padding_10 {
+    padding: 10px;
+}
+
 .margin_b100 {
     margin-bottom: 100px;
 }
 
+
 @media (max-width: 992px) {
     .media_margin_b100 {
-        margin: 100px 0;
+        margin: 30px 0;
+    }
+    .margin_b100 {
+        margin-bottom: 70px;
     }
 }
 
@@ -51,6 +63,74 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media (max-width: 576px) {
+    .row {
+        text-align: center;
+    }
+
+    .image-container {
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    .image-container img {
+        width: 100%;
+    }
+    .col-xs-12 {
+        margin-bottom: 50px;
+    }
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        display: none;
+    }
+}
+
+.navbar_mobile {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .navbar_mobile {
+        display: none;
+    }
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.navbar-logo {
+    padding: 20px 0 30px 0;
+}
+
+.nav-link a:hover {
+    transform: scale(1.2);
+    color: chocolate;
+}
+
+.btn-outline-success {
+    color: #818181;
+    border-color: #818181;
+}
+
+.btn-outline-success:hover {
+    background-color: #b90005;
+    border-color: #b90005;
 }
 
 .card-box {
@@ -84,6 +164,10 @@ a {
     opacity: 0;
 }
 
+.box-shadow {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.06);
+}
+
 .image-container:hover .product-1 {
     transform: scale(1.2);
 }
@@ -93,9 +177,13 @@ a {
     transform: scale(1.2);
 }
 
+.product-w2 {
+    transition: transform 0.3s ease-in-out;
+}
+
 .image-container:hover .product-w2 {
     opacity: 1;
-    transform: scale(1.2);
+    transform: scale(1.4);
 }
 
 .card-box-title {
@@ -201,14 +289,61 @@ a {
 .video-container {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
     overflow: hidden;
-  }
-  
-  .video-container iframe {
+}
+
+.video-container iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-  }
+}
+
+.bottom_b_icon {
+    justify-content: space-between;
+}
+
+.b_icon {
+    font-size: 25px;
+
+}
+
+.b_icon:hover {
+    color: #b90005;
+    transform: scale(1.2);
+}
+
+
+/*이벤트 팝업*/
+.popup {
+    display: none;
+    /* 초기에는 팝업을 숨깁니다. */
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: #8080803a;
+    padding: 5px;
+}
+
+.slider img {
+    display: none;
+    /* 슬라이더 이미지를 숨깁니다. */
+}
+
+.popup_tail {
+    display: flex;
+    background-color: #0000;
+}
+
+.popup_tail button {
+    width: 50%;
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    font-size: 14px;
+}
