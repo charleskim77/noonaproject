@@ -31,6 +31,7 @@
     h5 {
         color: #fff;
     }
+
 }
 
 [data-theme="light"] {
@@ -76,6 +77,15 @@
         padding: 0;
         overflow: hidden;
         box-shadow: 0 0 2px rgba(168, 168, 168, 0.5), 0 0 20px rgba(136, 136, 136, 0.4), 0 0 20px rgba(129, 129, 129, 0.137);
+    }
+    .bottom_menu_t {
+        color: #dbdbdb;
+    }
+    .bottom_b_icon {
+        color: #92d4dd;
+    }
+    .footer-business-information {
+        color:#808080;
     }
 }
 
