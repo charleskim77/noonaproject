@@ -17,6 +17,9 @@
     .nav-link:hover {
         color: #02acca;
     }
+    h5 {
+        color: #000;
+    }
 
 }
 

@@ -36,9 +36,33 @@
 [data-theme="light"] {
     --text-color: #000;
     /* 라이트 모드 텍스트 색상 */
-    --bg-color: #fff;
-
-    /* 라이트 모드 배경 색상 */
+    background:
+    radial-gradient(black 3px, transparent 4px),
+    radial-gradient(black 3px, transparent 4px),
+    linear-gradient(#fff 4px, transparent 0),
+    linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+    linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+    #fff;
+    background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    
+    body::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.884);
+        z-index: -1;
+        
+    }
+    .card-body {
+        background-color: #fffffff3;
+    }
+    h5 {
+        color: #000;
+    }
     .nav-link {
         color: #121212;
     }
@@ -53,7 +77,6 @@
         overflow: hidden;
         box-shadow: 0 0 2px rgba(168, 168, 168, 0.5), 0 0 20px rgba(136, 136, 136, 0.4), 0 0 20px rgba(129, 129, 129, 0.137);
     }
-
 }
 
 body {
@@ -506,5 +529,11 @@ a {
     .row {
         text-align: center;
         padding: 0 10px;
+    }
+    .box-shadow {    
+        border-radius: 15spx;
+        padding: 0;
+        overflow: hidden;
+        box-shadow: 0 0 2px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.4), 0 0 20px rgba(255, 255, 255, 0.137);
     }
 }
